@@ -1,43 +1,64 @@
-# React + TypeScript + Vite
+# Profile Card App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal, accessible, and responsive profile card built with React and TypeScript.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Live Site](http://localhost:3000)
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[https://github.com/Goodluckodalonu/INLINE1b](https://github.com/Goodluckodalonu/Inline1sb)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
+- Node.js (v16 or later recommended)
+- npm
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Clone the repository:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
+```bash
+git clone https://github.com/Goodluckodalonu/Inline1sb.git
+cd Inline1sb
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Tests
+
+- This project is set up for manual UI and accessibility testing.
+- Automated tests can be added in `src/__tests__/` using your preferred framework (e.g., Jest, React Testing Library).
+- To run lint checks:
+
+```bash
+npm run lint
+```
+
+## Notes
+
+- Place your avatar image as `public/avaterMe.png` for it to display on the card.
+- All interactive elements are keyboard accessible and have `data-testid` attributes for testing.
+- For deployment, update the `homepage` field in `package.json` and redeploy as needed.
+
+---
+
+© 2026 Goodluck Odalonu
+
     },
   },
 ])
