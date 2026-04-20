@@ -1,94 +1,50 @@
 # Profile Card App
 
-A minimal, accessible, and responsive profile card built with React and TypeScript.
+A minimal, accessible profile card built with vanilla JavaScript and plain CSS.
 
 ## Live Demo
 
-[Live Site](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000) after running the app locally.
 
 ## GitHub Repository
 
-[https://github.com/Goodluckodalonu/INLINE1b](https://github.com/Goodluckodalonu/Inline1sb)
+[https://github.com/Goodluckodalonu/INLINE1b](https://github.com/Goodluckodalonu/INLINE1b)
 
 ## Getting Started
 
 ### Prerequisites
-- Node.js (v16 or later recommended)
+- Node.js
 - npm
 
-### Installation
-
-Clone the repository:
+### Install and run
 
 ```bash
-git clone https://github.com/Goodluckodalonu/Inline1sb.git
-cd Inline1sb
-```
-
-Install dependencies:
-
-```bash
+git clone https://github.com/Goodluckodalonu/INLINE1b.git
+cd INLINE1b
 npm install
-```
-
-Start the development server:
-
-```bash
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Tests
+## Project files
 
-- This project is set up for manual UI and accessibility testing.
-- Automated tests can be added in `src/__tests__/` using your preferred framework (e.g., Jest, React Testing Library).
-- To run lint checks:
-
-```bash
-npm run lint
-```
+- `index.html` — static page shell
+- `styles.css` — plain CSS styling
+- `main.js` — vanilla JavaScript rendering and live time updates
+- `avaterMe.png` — local avatar image file (place in project root)
 
 ## Notes
 
-- Place your avatar image as `public/avaterMe.png` for it to display on the card.
-- All interactive elements are keyboard accessible and have `data-testid` attributes for testing.
-- For deployment, update the `homepage` field in `package.json` and redeploy as needed.
+- The UI is built with plain HTML, CSS, and JavaScript.
+- Social links open in a new tab using `rel="noopener noreferrer"`.
+- The profile current time updates every 500ms and is annotated with `data-testid` attributes for testing.
+- If `avaterMe.png` is not present, add the file to the project root or adjust the avatar path in `main.js`.
 
----
+## Manual testing
+
+- Confirm the profile card renders on page load.
+- Verify the time value updates.
+- Test keyboard navigation through the social links.
 
 © 2026 Goodluck Odalonu
-
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
