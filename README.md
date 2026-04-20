@@ -1,50 +1,44 @@
-# Profile Card App
+Profile card
 
-A minimal, accessible profile card built with vanilla JavaScript and plain CSS.
+A lightweight frontend project built with pure HTML, CSS, and JavaScript — focused on simplicity, clarity, and clean interaction.
 
-## Live Demo
+🌐 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) after running the app locally.
+👉 https://inlineat1sb.netlify.app/
 
-## GitHub Repository
+🚀 Run Locally
+1. Clone the repository
+git clone https://github.com/Goodluckodalonu/Inline1sb.git
+cd Inline1sb
+2. Open in browser
 
-[https://github.com/Goodluckodalonu/INLINE1b](https://github.com/Goodluckodalonu/INLINE1b)
+Simply open index.html in your browser.
 
-## Getting Started
+⚡ Optional (Better Dev Experience)
 
-### Prerequisites
-- Node.js
-- npm
+Use a local server for live reload:
 
-### Install and run
+VS Code (Live Server)
 
-```bash
-git clone https://github.com/Goodluckodalonu/INLINE1b.git
-cd INLINE1b
-npm install
-npm start
-```
+Install Live Server
+Right-click index.html → Open with Live Server
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Python
 
-## Project files
+python -m http.server
 
-- `index.html` — static page shell
-- `styles.css` — plain CSS styling
-- `main.js` — vanilla JavaScript rendering and live time updates
-- `avaterMe.png` — local avatar image file (place in project root)
+Then visit: http://localhost:8000
 
-## Notes
+📁 Project Structure
+Inline1sb/
+├── index.html
+├── style.css
+└── main.js
+✨ Highlights
+Zero dependencies
+Fast and lightweight
+Clean, readable structure
+Beginner-friendly but extendable
+📌 Notes
 
-- The UI is built with plain HTML, CSS, and JavaScript.
-- Social links open in a new tab using `rel="noopener noreferrer"`.
-- The profile current time updates every 500ms and is annotated with `data-testid` attributes for testing.
-- If `avaterMe.png` is not present, add the file to the project root or adjust the avatar path in `main.js`.
-
-## Manual testing
-
-- Confirm the profile card renders on page load.
-- Verify the time value updates.
-- Test keyboard navigation through the social links.
-
-© 2026 Goodluck Odalonu
+Built for simplicity — no frameworks, no build tools, just the fundamentals done right.
